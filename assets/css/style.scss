@@ -29,3 +29,16 @@ span.excerpt {
     font-size: small;
     color: gray;
 }
+
+div.footer-buttons {
+    text-align: center;
+}
+
+div.footer-buttons span.icon {
+    margin-left: 40%; /* gambiarra feia pra deixar o icone no meio */
+}
+
+.btn-twitter .icon {
+    opacity: 0.6;
+    background: url("../images/twitter.png") 0 0 no-repeat;
+}
