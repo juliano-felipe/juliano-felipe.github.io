@@ -3,8 +3,9 @@
 
 @import 'jekyll-theme-hacker';
 
-ul {
-  list-style-type: none;
+ul li:before {
+  content: "$";
+  
 }
 
 a {
@@ -15,8 +16,16 @@ a {
 
 span.title {
     font-weight: bold;
+    font-size: x-large;
+}
+
+span.date {
+    font-size: small;
+    color: gray;
 }
 
 span.excerpt {
-    padding-left: 64px;
+    padding-left: 20px;
+    font-size: small;
+    color: gray;
 }
