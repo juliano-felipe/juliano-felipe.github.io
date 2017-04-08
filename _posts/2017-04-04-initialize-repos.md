@@ -3,13 +3,13 @@ layout: post
 title: Initialize a Repos
 categories: git initialize
 tags: git init initialize remote fetch
-excerpt: To start using Git, you need to set your Server, that can be a github, gitlab or whatever you want. If you want to set ...
+excerpt: To start using Git you need to set your Server. It can be a github, gitlab or whatever you want. If you want to set ...
 ---
 # Initialize a Repos
 
 ### Bare Repos (server)
 
-To start using Git, you need to set your Server, that can be a github, gitlab or whatever you want. If you want to set a Git Server on your machine, the simplest way to do that is creating a folder in you computer, and run the following commands:
+To start using Git you need to set your Server. I can be a github, gitlab or whatever you want. If you want to set a Git Server on your machine, the simplest way to do that is creating a folder in you computer, and run the following commands:
 
 _For example purposes, let's say we have a /git-server in our computer_
 
