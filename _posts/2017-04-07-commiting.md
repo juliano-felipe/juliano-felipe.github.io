@@ -1,0 +1,50 @@
+---
+layout: post
+title: Commit
+---
+# Commit
+
+To make a commit, you first need to `add` files to the stage, and then `commit`. It's trivial:
+
+``` bash
+$ git add <files>
+$ git commit
+```
+
+The text editor will pop up, and that's it.
+But...
+
+Some people don't know that, some people forget that, and most git users don't use that: In `git add`, you can use wildcards to segregate files. Sometimes we do too much work at once and want to spread the files in multiple commits, that's when the wildcards are useful. Here are some ideas:
+
+``` bash
+# Add all files listed on git status
+$ git add .
+
+# Adds all .java files listed on git status
+$ git add *.java
+
+# Adds all files under an src folder, whatever src is under.
+$ git add */src
+
+# Adds all .java files under src folder
+$ git add */src/*/*.java
+```
+
+And, if you really want to add files that are listed on `.gitignore`, you can use the `-f` parameter to add it. The problem is that it's not listed on `git status`. To do that, use `git status --ignored`. Git will show the unstaged files, the staged files, and the ignored files, separately.
+
+``` bash
+$ git status --ignored
+```
+
+You can also use it with the aliases from the [Config](https://nipanga.github.io/2017/04/03/config.html) post, like this:
+
+``` bash
+$ git st --ignored
+```
+
+That's pretty much it. Very, very simple, yet many people tend to forget these things.
+
+Next post will be about commit messages.
+
+
+Bye ::]
