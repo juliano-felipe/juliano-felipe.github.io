@@ -4,10 +4,11 @@ layout: default
 <nav class="posts">
     {% for post in paginator.posts %}
         <a href="{{ post.url }}">
-            <span class="title">{{ post.title }}</span>
+            <span class="title">$ {{ post.title }}</span>
             <span class="date">[{{ post.date | date:"%Y-%m-%d" }}]</span>
             <br/>
             <span class="excerpt">{{ post.excerpt }}</span>
         </a>
+        <br/><br/><br/>
     {% endfor %}
 </nav>
