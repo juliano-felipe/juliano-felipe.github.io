@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Commit
+categories: git commit
+tags: git commit add
 ---
 # Commit
 
