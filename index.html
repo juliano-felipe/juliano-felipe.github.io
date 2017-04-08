@@ -2,12 +2,15 @@
 layout: default
 ---
 <ul class="posts">
-{% for post in site.posts limit: 15 %}
-  <div class="post_info">
-    <li>
-         <a href="{{ post.url }}">{{ post.title }}</a>
-         <span>({{ post.date | date:"%Y-%m-%d" }})</span>
-    </li>
-    </div>
-  {% endfor %}
+    {% for post in paginator.posts %}
+        <div class="post_info">
+            <li>
+                <span class="title"><a href="{{ post.url }}">$ {{ post.title }}</a></span>
+                <span class="date"><a href="{{ post.url }}">[{{ post.date | date:"%Y-%m-%d" }}]</a></span>
+                <br/>
+                <span class="excerpt"><a href="{{ post.url }}">{{ post.excerpt }}</a></span>
+            <li>
+        </div>
+        <br/><br/>
+    {% endfor %}
 </ul>

@@ -13,20 +13,29 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: "git-gud.sh"
-email: jotafelipe@gmail.com
-description: "Want to use Git? Git Gud!"
+description: ""
+
+email: "jotafelipe@gmail.com"
+
 baseurl: ""
 url: "https://nipanga.github.io/"
+
 twitter_username: realnipanga
 github_username:  nipanga
+
 google_analytics: UA-97046781-1
+
+paginate: 15
+paginate_path: "page/:num/"
 
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-hacker
 gems:
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
