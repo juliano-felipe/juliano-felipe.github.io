@@ -27,7 +27,7 @@ github_username:  nipanga
 
 google_analytics: UA-97046781-1
 
-paginate: 1
+paginate: 15
 paginate_path: "page/:num/"
 
 # Build settings
