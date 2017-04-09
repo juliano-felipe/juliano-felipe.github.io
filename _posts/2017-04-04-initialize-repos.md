@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Initialize a Repos
 categories: git initialize
 tags: git init initialize remote fetch
