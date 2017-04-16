@@ -4,6 +4,7 @@ title: Commit Messages
 categories: git commit
 tags: git commit message
 excerpt: People often don't pay the proper attention to commit messages, but ...
+comments: true
 author: felipe
 ---
 # Commit Messages
