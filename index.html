@@ -7,7 +7,7 @@ layout: default
             <span class="title"># {{ post.title }}</span>
             <span class="date">[{{ post.date | date:"%Y-%m-%d" }}]</span>
             <br/>
-            <span class="excerpt">{{ post.excerpt }}</span>
+            <span class="excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 137 }}...</span>
             <br/>
             <span class="comment-count">{% include disqus-comment-count.html %}</span>
         </a>
