@@ -8,7 +8,7 @@ layout: default
             <span class="title"># {{ post.title }}</span>
             <br/>
             <span class="excerpt">
-                {{ post.excerpt | strip_html | strip_newlines | truncate: 96 }}...
+                "{{ post.excerpt | strip_html | strip_newlines | truncate: 75 }}..."
             </span>
             <br/>
         </a>
