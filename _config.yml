@@ -33,6 +33,15 @@ paginate_path: "page/:num/"
 disqus_short_name: "nipanga"
 disqus_url: "https://nipanga.disqus.com"
 
+# Authors
+
+authors:
+    nipanga:
+        name: Juliano A. Felipe
+        page: nipanga.github.io
+        linkedin: linkedin.com/in/juliano-a-felipe-28916bb1
+        facebook: https://www.facebook.com/nipanga
+
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-hacker
