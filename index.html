@@ -3,6 +3,7 @@ layout: default
 ---
 <nav class="posts">
     {% for post in paginator.posts %}
+        <br/>
         <a href="{{ post.url }}">
             <span class="title"># {{ post.title }}</span>
             <span class="date">[{{ post.date | date:"%Y-%m-%d" }}]</span>
@@ -15,7 +16,8 @@ layout: default
                 | <a href="{{ site.url }}{{ post.url }}#disqus_thread">0 Comments</a>
             {% endif %}
         </span>
-        <br/><br/><br/>
+        <br/>
+        <hr/>
     {% endfor %}
 </nav>
 <br/>
