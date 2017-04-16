@@ -3,7 +3,8 @@
     <p class="post-meta">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
         {% if page.author %}
-            | <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+            | <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">
+            {{ site.authors[page.author].name }}</span></span>
         {% endif %}
         {% if page.comments %} 
             | <a href="{{ site.url }}{{ page.url }}#disqus_thread">0 Comments</a>
