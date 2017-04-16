@@ -9,8 +9,12 @@ layout: default
             <br/>
             <span class="excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 96 }}...</span>
             <br/>
-            <span class="comment-count">{% include disqus-comment-count.html %}</span>
         </a>
+        <span class="comment-count">
+            {% if post.comments %}
+                | <a href="{{ site.url }}{{ post.url }}#disqus_thread">0 Comments</a>
+            {% endif %}
+        </span>
         <br/><br/><br/>
     {% endfor %}
 </nav>
