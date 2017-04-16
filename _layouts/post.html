@@ -2,16 +2,9 @@
 layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-        {% include post-header.html %}
-        <div class="container">
-        <section id="main_content">
-            {{ content }}
-            <br/>
-            
-        </section>
-        </div>
-        
-        
-    {% include disqus.html %}
+    {% include post-header.html %}
+    <div itemprop="articleBody">
+        {{ content }}
+    </div>
 </article>
+{% include disqus.html %}
