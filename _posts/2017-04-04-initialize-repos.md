@@ -3,9 +3,8 @@ layout: default
 title: Initialize a Repos
 categories: git initialize
 tags: git init initialize remote fetch
-excerpt: To start using Git you need to set your Server. It can be a github, gitlab or whatever you want. If you want to set ...
 comments: true
-author: felipe
+author: nipanga
 ---
 # Initialize a Repos
 
