@@ -108,9 +108,9 @@ Git will fill the commit message automatically, you don't need to change that. (
 
 You only finish the merge when you `git commit`. Lots of new Git users get this wrong and think that after you edited the file the merge is done.
 **DO NOT FORGET TO `git commit`.**
-
------
-
+  
+  
+  
 And that's pretty much it. I told you that it's not that bad. Although it's pretty basic this should cover 98% of your merging needs.
 
 Next post we'll talk about branches and tips about creating new ones.
