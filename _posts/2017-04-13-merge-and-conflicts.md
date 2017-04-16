@@ -1,14 +1,11 @@
 ---
-layout: default
+layout: post
 title: Merge, and Conflicts
 categories: git merge conflict
 tags: git merge merging conflict conflicts
 comments: true
 author: nipanga
 ---
-
-# Merge
-
 Merge. Merge. MERGE. A 7 headed monster that no one wants to deal with...
 Actually, it's not that bad. It just has two heads. And I'll explain how to beat each one.
 

@@ -1,13 +1,11 @@
 ---
-layout: default
+layout: post
 title: Commit Messages
 categories: git commit
 tags: git commit message
 comments: true
 author: nipanga
 ---
-# Commit Messages
-
 People often don't pay the proper attention to commit messages, but it is something so important that I feel like I need to write about it.
   
 Commit messages are not just texts that you type and forget. It is used by almost everyone in the team, including yourself!  

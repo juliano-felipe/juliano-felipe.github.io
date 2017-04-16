@@ -1,13 +1,11 @@
 ---
-layout: default
+layout: post
 title: Initialize a Repos
 categories: git initialize
 tags: git init initialize remote fetch
 comments: true
 author: nipanga
 ---
-# Initialize a Repos
-
 ### Bare Repos (server)
 
 To start using Git you need to set your Server. I can be a github, gitlab or whatever you want. If you want to set a Git Server on your machine, the simplest way to do that is creating a folder in you computer, and run the following commands:
