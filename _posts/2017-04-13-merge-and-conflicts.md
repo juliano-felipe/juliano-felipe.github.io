@@ -4,7 +4,7 @@ title: Merge, and Conflicts
 categories: git merge conflict
 tags: git merge merging conflict conflicts
 excerpt: Merge. Merge. MERGE. A 7 headed monster that no one wants to deal with ...
-author: Felipe
+author: felipe
 ---
 
 # Merge
