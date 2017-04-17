@@ -79,7 +79,7 @@ When you open a conflicted file, you'll see something like this:
 >>>>>>> another-branch
 ```
 
-All you need to to is identify the code you want to stay in the file, and delete the lines you do not want, including the ` <<<<<<< HEAD `, ` ======= `, and ` >>>>>>> another-branch `.
+All you need to to is identify the code you want to stay in the file, and delete the lines you do not want, including the `<<<<<<< HEAD`, `=======`, and `>>>>>>> another-branch`.
 
 The tricky part here is identifying which one is the correct one to stay in the code. Sometimes it's your side, something is their side, and sometimes it's both sides.
 
