@@ -14,35 +14,35 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# website
 title: "git-gud.sh"
 description: ""
-
-email: "jotafelipe@gmail.com"
-
 baseurl: ""
 url: "https://nipanga.github.io/"
+email: "jotafelipe@gmail.com"
 
+
+# third party services
 twitter_username: realnipanga
 github_username:  nipanga
-
 google_analytics: UA-97046781-1
 
+# pagination settings
 paginate: 15
 paginate_path: "page/:num/"
 
+# comments settings - disqus
 disqus_short_name: "nipanga"
 disqus_url: "https://nipanga.disqus.com"
 
-# Authors
-
+# authors info
 authors:
     nipanga:
         name: Juliano A. Felipe
-        page: nipanga.github.io
-        linkedin: linkedin.com/in/juliano-a-felipe-28916bb1
-        facebook: https://www.facebook.com/nipanga
+        url: https://twitter.com/realnipanga
 
-# Build settings
+        
+# build settings
 markdown: kramdown
 theme: jekyll-theme-hacker
 gems:
