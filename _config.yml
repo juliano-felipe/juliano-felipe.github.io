@@ -32,8 +32,8 @@ paginate: 15
 paginate_path: "page/:num/"
 
 # Comments Settings - Disqus
-disqus_short_name: "nipanga"
-disqus_url: "https://nipanga.disqus.com"
+disqus_short_name: "nipanga-github-io"
+disqus_url: "https://nipanga-github-io.disqus.com"
 
 # Authors Info
 authors:
