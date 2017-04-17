@@ -11,7 +11,9 @@
             </span>
         {% endif %}
         {% if page.comments %} 
-            | <a href="{{ site.url }}{{ page.url }}#disqus_thread">0 Comments</a>
+            | <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ page.url }}">
+                0 Comments
+            </span>
         {% endif %}
     </p>
 </header>
