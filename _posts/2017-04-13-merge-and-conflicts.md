@@ -72,7 +72,7 @@ When you open a conflicted file, you'll see something like this:
 /* another line of code */
 /* more code */
 
-<<<<<<< HEAD another-branch
+<<<<<<< HEAD
 /* ahn.. I guess MY code is the correct one */
 =======
 /* no, MY code is right, not yours */
