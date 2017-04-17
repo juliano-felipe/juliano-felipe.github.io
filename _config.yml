@@ -54,7 +54,7 @@ kramdown:
     css_class: 'highlight'
     span:
       line_numbers: false
-      disable: true
+      disable: false
     block:
       line_numbers: true
       start_line: 1
