@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# website
+# Website
 title: "git-gud.sh"
 description: ""
 baseurl: ""
@@ -22,32 +22,49 @@ url: "https://nipanga.github.io/"
 email: "jotafelipe@gmail.com"
 
 
-# third party services
+# Third PParty Services
 twitter_username: realnipanga
 github_username:  nipanga
 google_analytics: UA-97046781-1
 
-# pagination settings
+# Pagination Settings
 paginate: 15
 paginate_path: "page/:num/"
 
-# comments settings - disqus
+# Comments Settings - Disqus
 disqus_short_name: "nipanga"
 disqus_url: "https://nipanga.disqus.com"
 
-# authors info
+# Authors Info
 authors:
     nipanga:
         name: Juliano A. Felipe
         url: https://twitter.com/realnipanga
 
         
-# build settings
+# Build Settings
 markdown: kramdown
 theme: jekyll-theme-hacker
+
+# Kramdown Code Block Syntax Highlighting
+kramdown:
+  input:          GFM
+  # https://github.com/jekyll/jekyll/pull/4090
+  syntax_highlighter: rouge # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
+  # span, block element options fall back to global
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+# Gems
 gems:
   - jekyll-feed
   - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
+

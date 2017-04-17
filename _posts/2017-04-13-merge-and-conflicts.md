@@ -6,7 +6,7 @@ tags: git merge merging conflict conflicts
 comments: true
 author: nipanga
 ---
-Merge. Merge. MERGE. A 7 headed monster that no one wants to deal with...
+Merge... A 7 headed monster that no one wants to deal with...
 Actually, it's not that bad. It just has two heads. And I'll explain how to beat each one.
 
 ## First Head: A Simple Merge
@@ -32,7 +32,9 @@ There is, basically, two methods to solve a conflict:
 
 ## 1. Choosing a Strategy: our side or their side
 
-Taking our side of the conflict is easy. The caveat here is that you need to see for yourself, checking ALL the files, if our side of the conflict is the correct one to use. After you checked, I repeat, ALL the files conflicted files and you're sure that our side of the conflict is the correct one, you need to abort the current merge, then merge again with the parameter `-X ours` and it's done. Like this:
+Taking our side of the conflict is easy. The caveat here is that you need to see for yourself, checking ALL the files, if our side of the conflict is the correct one to use. 
+After you checked, I repeat, ALL the files conflicted files and you're sure that our side of the conflict is the correct one, you need to abort the current merge, then merge 
+again with the parameter `-X ours` and it's done. Like this:
 
 ```bash
 $ git merge --abort
@@ -52,7 +54,7 @@ $ git merge -X theirs another-branch
 
 _**Important Note: In case there is no conflict, Git will not just take your side of the code. The command is different, and we'll cover this in another post.**_
 
-2. Solving it yourself.
+## 2. Solving it yourself.
 
 Solving it yourself needs a little more work, but there's is some cases that you need to take our side of the conflict, and another file their side of the conflict, and sometimes you need both sides of the conflict.
 There's is no built-in strategy to take both sides of the conflict.
@@ -77,11 +79,12 @@ When you open a conflicted file, you'll see something like this:
 >>>>>>> another-branch
 ```
 
-All you need to to is identify the code you want to stay in the file, and delete the lines you do not want, including the `<<<<<<< HEAD`, `=======`, and `>>>>>>> another-branch`.
+All you need to to is identify the code you want to stay in the file, and delete the lines you do not want, including the ` <<<<<<< HEAD `, ` ======= `, and ` >>>>>>> another-branch `.
 
 The tricky part here is identifying which one is the correct one to stay in the code. Sometimes it's your side, something is their side, and sometimes it's both sides.
 
-AFTER you decided what code is right, and deleted the lines Git created to show you the conflict, for ALL the files, you just need to add these files to the stage and commit. Like this (in this example, both sides should stay in the file):
+AFTER you decided what code is right, and deleted the lines Git created to show you the conflict, for ALL the files, you just need to add these files to the stage and commit. 
+Like this (in this example, both sides should stay in the file):
 
 ```bash
 ++ File.code ++
