@@ -33,7 +33,7 @@ There is, basically, two methods to solve a conflict:
 ## 1. Choosing a Strategy: our side or their side
 
 Taking our side of the conflict is easy. The caveat here is that you need to see for yourself, checking ALL the files, if our side of the conflict is the correct one to use. 
-After you checked, I repeat, ALL the files conflicted files and you're sure that our side of the conflict is the correct one, you need to abort the current merge, then merge 
+After you checked, I repeat, ALL conflicted files and you're sure that our side of the conflict is the correct one, you need to abort the current merge, then merge 
 again with the parameter `-X ours` and it's done. Like this:
 
 ```bash
