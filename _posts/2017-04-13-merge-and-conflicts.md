@@ -1,5 +1,6 @@
 ---
 layout: post
+visible: true
 title: Merge, and Conflicts
 categories: git merge conflict
 tags: git merge merging conflict conflicts
