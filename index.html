@@ -3,30 +3,32 @@ layout: default
 ---
 <nav class="posts">
     {% for post in paginator.posts %}
-        <br/>
-        <a href="{{ post.url }}">
-            <span class="title"># {{ post.title }}</span>
+        {% if post.visible %}
             <br/>
-            <span class="excerpt">
-                "{{ post.excerpt | strip_html | strip_newlines | truncate: 75 }}..."
+            <a href="{{ post.url }}">
+                <span class="title"># {{ post.title }}</span>
+                <br/>
+                <span class="excerpt">
+                    "{{ post.excerpt | strip_html | strip_newlines | truncate: 75 }}..."
+                </span>
+                <br/>
+            </a>
+            <span class="subscript">
+                <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                    | {{ post.date | date: "%Y-%m-%d" }}
+                </time>
+                {% if post.author %}
+                    | <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">{{ site.authors[post.author].name }}</span>
+                    </span>
+                {% endif %}
+                {% if post.comments %}
+                    | <a href="{{ site.url }}{{ post.url }}#disqus_thread">0 Comments</a>
+                {% endif %}
             </span>
             <br/>
-        </a>
-        <span class="subscript">
-            <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-                | {{ post.date | date: "%Y-%m-%d" }}
-            </time>
-            {% if post.author %}
-                | <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                    <span itemprop="name">{{ site.authors[post.author].name }}</span>
-                </span>
-            {% endif %}
-            {% if post.comments %}
-                | <a href="{{ site.url }}{{ post.url }}#disqus_thread">0 Comments</a>
-            {% endif %}
-        </span>
-        <br/>
-        <hr/>
+            <hr/>
+        {% endif %}
     {% endfor %}
 </nav>
 <br/>
