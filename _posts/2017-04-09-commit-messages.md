@@ -1,5 +1,6 @@
 ---
 layout: post
+visible: true
 title: Commit Messages
 categories: git commit
 tags: git commit message
