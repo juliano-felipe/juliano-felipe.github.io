@@ -53,7 +53,7 @@ $ git checkout -b feature-something master
 _**Important Note: Keep in mind that `git fetch <remote> any-branch:any-branch` throws an error if you're on `any-branch`.
 So, you need to run that command from another branch that's not the branch you want to fetch.**_
 
-The trick here is better to create a branch from `master` than from its remote tracking counter-part `origin/master`,
+The trick here is better to create a branch from `master` and not from its remote tracking counter-part `origin/master`,
 because your new branch will be 'attached' to `origin/master`, and if you do a `git push` without any parameters, 
 you can screw up your `master` branch pretty nice.  
 And, in many projects out there, you (barely) not push code directly into `master`, so it's better not to 'touch' it in
