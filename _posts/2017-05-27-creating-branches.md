@@ -56,7 +56,7 @@ So, you need to run that command from another branch that's not the branch you w
 The trick here is better to create a branch from `master` and not from its remote tracking counter-part `origin/master`,
 because your new branch will be 'attached' to `origin/master`, and if you do a `git push` without any parameters, 
 you can screw up your `master` branch pretty nice.  
-And, in many projects out there, you (barely) not push code directly into `master`, so it's better not to 'touch' it in
+And, in many projects out there, you (barely) won't push code directly into `master`, so it's better to not 'touch' it in
 any way, it is just there to help you create new branches.
 
 With that trick you won't need to fetch all project's branches and won't see a thousand lines when typing `git branch -a`,
