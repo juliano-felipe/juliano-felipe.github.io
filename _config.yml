@@ -18,7 +18,7 @@
 title: "git-gud.sh"
 description: ""
 baseurl: ""
-url: "https://nipanga.github.io"
+url: "https://o-professor.github.io"
 email: "jotafelipe@gmail.com"
 
 
@@ -32,8 +32,8 @@ paginate: 15
 paginate_path: "page/:num/"
 
 # Comments Settings - Disqus
-disqus_short_name: "nipanga-github-io"
-disqus_url: "https://nipanga-github-io.disqus.com"
+disqus_short_name: "o-professor-github-io"
+disqus_url: "https://o-professor-github-io.disqus.com"
 
 # Authors Info
 authors:
