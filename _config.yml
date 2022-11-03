@@ -18,13 +18,13 @@
 title: "git-gud.sh"
 description: ""
 baseurl: ""
-url: "https://o-professor.github.io"
-email: "jotafelipe@gmail.com"
+url: "https://juliano-felipe.github.io"
+email: "jotafelipe+blog@gmail.com"
 
 
 # Third PParty Services
-twitter_username: https://twitter.com/realnipanga
-github_username:  nipanga
+twitter_username: https://twitter.com/_oprofessor
+github_username:  juliano-felipe
 google_analytics: UA-97046781-1
 
 # Pagination Settings
@@ -32,14 +32,14 @@ paginate: 15
 paginate_path: "page/:num/"
 
 # Comments Settings - Disqus
-disqus_short_name: "o-professor-github-io"
-disqus_url: "https://o-professor-github-io.disqus.com"
+disqus_short_name: "juliano-felipe-github-io"
+disqus_url: "https://juliano-felipe-github-io.disqus.com"
 
 # Authors Info
 authors:
     nipanga:
         name: Juliano A. Felipe
-        url: https://twitter.com/realnipanga
+        url: https://twitter.com/_oprofessor
 
         
 # Build Settings
